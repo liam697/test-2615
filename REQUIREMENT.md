@@ -37,7 +37,7 @@ Yêu cầu
 ### 4.1 Floating Button
 
 - Nút nổi (floating button).
-- Click → mở chat popup.
+- Click => mở chat popup.
 
 ### 4.2 Popup Chat Window
 
@@ -61,23 +61,14 @@ Gồm 3 phần:
   - Online
   - Offline
 
-## 6. State Management
-
-Dùng Zustand quản lý:
-
-- user info
-- room info (roomId/roomName)
-- messages: Message[]
-- status: connecting | online | offline
-
-## 7. Configurable qua data attributes
+## 6. Configurable qua data attributes
 
 SDK đọc config từ script tag:
 
 - data-position: bottom-right | bottom-left
 - data-api-key (có thể mock usage)
 
-## 8. FLOW — 3 bước
+## 7. FLOW — 3 bước
 
 #### Step 1 — Tạo user (Form)
 
@@ -153,24 +144,20 @@ Form tạo phòng chat
 - Gửi/nhận tin nhắn realtime giữa các user trong cùng room.
 - Unread count tăng khi popup đóng và có message mới.
 
-## 9. Anti partern
-
-- Inline styles
-- !important
-
-## 10. Packaging/Build
+## 8. Packaging/Build
 
 - dist/sdk.js (IIFE/UMD) để embed trực tiếp bằng script tag.
 - demo-host/index.html (trang HTML thuần) để test embed.
 - Hướng dẫn chạy demo local (README).
 
-## 11. Tài liệu (output)
+## 9. Tài liệu (output)
 
 README.md
 
 - Cách build SDK
 - Cách chạy demo embed
-- Cách config data attributes
+- Có thể thay đổi giao diện theo yêu cầu
+- Có khả năng truy vết thông tin website gửi
 
 DESIGN.md
 
